@@ -23,7 +23,6 @@ def preprocess_audio(audio_path):
     sf.write(output_path, y, sr)
     return output_path
 
-
 if __name__ == '__main__':
     for file in os.listdir(audio_folder):
         if file.endswith(".wav"):
