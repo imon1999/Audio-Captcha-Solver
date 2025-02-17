@@ -6,8 +6,8 @@ from scipy.signal import butter, lfilter
 import os
 
 # Dataset path 
-dataset_path = "C:/Users/YourName/CAPTCHA_Dataset/"
-audio_folder = os.path.join(dataset_path, "audio/")
+dataset_path = "Dataset/"
+audio_folder = os.path.join(dataset_path, "Dataset/audio/")
 
 def bandpass_filter(audio, sr, lowcut=300, highcut=3400):
     nyquist = 0.5 * sr
